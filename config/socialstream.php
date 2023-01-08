@@ -30,7 +30,9 @@ return [
     */
 
     'providers' => [
-        Providers::github(),
+        Providers::linkedin(),
+        Providers::google(),
+        'zoom',
     ],
 
     /*

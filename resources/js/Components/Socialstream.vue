@@ -9,6 +9,7 @@ import GoogleIcon from '@/Components/SocialstreamIcons/GoogleIcon.vue';
 import InputError from '@/Components/InputError.vue';
 import LinkedInIcon from '@/Components/SocialstreamIcons/LinkedInIcon.vue';
 import TwitterIcon from '@/Components/SocialstreamIcons/TwitterIcon.vue';
+import ZoomIcon from '@/Components/SocialstreamIcons/ZoomIcon.vue';
 
 const error = computed(() => usePage().props.value.errors.socialstream);
 </script>
@@ -63,6 +64,11 @@ const error = computed(() => usePage().props.value.errors.socialstream);
       <a v-if="$page.props.socialstream.providers.includes('bitbucket')" :href="route('oauth.redirect', 'bitbucket')">
         <BitbucketIcon class="h-6 w-6 mx-2"/>
         <span class="sr-only">BitBucket</span>
+      </a>
+
+      <a v-if="$page.props.socialstream.providers.includes('zoom')" :href="route('oauth.redirect', 'zoom')">
+        <ZoomIcon class="h-6 w-6 mx-2"/>
+        <span class="sr-only">Zoom</span>
       </a>
     </div>
 

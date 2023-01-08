@@ -6,6 +6,7 @@ import GitLabIcon from '@/Components/SocialstreamIcons/GitLabIcon.vue';
 import GoogleIcon from '@/Components/SocialstreamIcons/GoogleIcon.vue';
 import LinkedInIcon from '@/Components/SocialstreamIcons/LinkedInIcon.vue';
 import TwitterIcon from '@/Components/SocialstreamIcons/TwitterIcon.vue';
+import ZoomIcon from '@/Components/SocialstreamIcons/ZoomIcon.vue';
 
 defineProps({
     provider: String,
@@ -28,6 +29,7 @@ defineProps({
                 <GithubIcon class="h-6 w-6 mr-2" v-if="provider === 'github'" />
                 <GitLabIcon class="h-6 w-6 mr-2" v-if="provider === 'gitlab'" />
                 <BitbucketIcon class="h-6 w-6 mr-2" v-if="provider === 'bitbucket'" />
+                <ZoomIcon class="h-6 w-6 mr-2" v-if="provider === 'zoom'" />
 
                 <div>
                     <div class="text-sm font-semibold text-gray-600">
