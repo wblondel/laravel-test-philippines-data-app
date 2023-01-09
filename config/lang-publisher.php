@@ -38,7 +38,7 @@ return [
      * By default, true
      */
 
-    'align' => true,
+    'align' => false,
 
     /*
      * The language codes chosen for the files in this repository may not
