@@ -7524,16 +7524,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "12.9.9",
+            "version": "12.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "76af289a2c7ca9ffbeeb031277ee5713db62cf18"
+                "reference": "9b4e7ed6bc36392d5810bbc0bf009417de383289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/76af289a2c7ca9ffbeeb031277ee5713db62cf18",
-                "reference": "76af289a2c7ca9ffbeeb031277ee5713db62cf18",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/9b4e7ed6bc36392d5810bbc0bf009417de383289",
+                "reference": "9b4e7ed6bc36392d5810bbc0bf009417de383289",
                 "shasum": ""
             },
             "require": {
@@ -7544,7 +7544,7 @@
             },
             "require-dev": {
                 "laravel-lang/publisher": "^14.0",
-                "laravel-lang/status-generator": "^1.8",
+                "laravel-lang/status-generator": "^1.9",
                 "php": "^8.1",
                 "phpunit/phpunit": "^9.5",
                 "symfony/var-dumper": "^5.0 || ^6.0"
@@ -7595,7 +7595,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-01-07T12:11:38+00:00"
+            "time": "2023-01-11T20:01:06+00:00"
         },
         {
             "name": "laravel-lang/publisher",
