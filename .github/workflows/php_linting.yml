@@ -17,6 +17,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           persist-credentials: false
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
 
       - name: Import GPG key
         id: import-gpg
@@ -41,5 +42,3 @@ jobs:
           commit_user_name: wblondel-bot
           commit_user_email: ${{ steps.import-gpg.outputs.email }}
           commit_author: ${{ steps.import-gpg.outputs.name }} <${{ steps.import-gpg.outputs.email }}>
-        env:
-          GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
