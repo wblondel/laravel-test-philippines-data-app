@@ -38,6 +38,6 @@ jobs:
         with:
           commit_message: Apply Laravel Pint changes
           commit_options: '-S'
-          commit_user_name: ${{ steps.import-gpg.outputs.name }}
+          commit_user_name: wblondel-bot
           commit_user_email: ${{ steps.import-gpg.outputs.email }}
           commit_author: ${{ steps.import-gpg.outputs.name }} <${{ steps.import-gpg.outputs.email }}>
