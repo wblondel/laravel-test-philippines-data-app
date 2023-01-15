@@ -18,11 +18,11 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Import GPG key
-        id: import_gpg
+        id: import-gpg
         uses: crazy-max/ghaction-import-gpg@v5
         with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          gpg_private_key: ${{ secrets.BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.BOT_GPG_PASSPHRASE }}
           git_user_signingkey: true
           git_commit_gpgsign: true
 
@@ -36,3 +36,5 @@ jobs:
         with:
           commit_message: Apply Laravel Pint changes
           commit_options: '-S'
+          commit_user_name: ${{ steps.import-gpg.outputs.name }}
+          commit_user_email: ${{ steps.import-gpg.outputs.email }}
