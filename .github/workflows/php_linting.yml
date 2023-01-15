@@ -17,6 +17,15 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v5
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
       - name: "laravel-pint"
         uses: aglipanci/laravel-pint-action@2.0.0
         with:
@@ -26,3 +35,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply Laravel Pint changes
+          commit_options: '-S'
