@@ -84,7 +84,8 @@ class User extends Authenticatable implements MustVerifyEmail
         $this->notify(new \App\Notifications\Auth\QueuedVerifyEmail);
     }
 
-    public function sendPasswordResetNotification($token) {
+    public function sendPasswordResetNotification($token)
+    {
         $this->notify(new \App\Notifications\Auth\QueuedResetPassword($token));
     }
 }
