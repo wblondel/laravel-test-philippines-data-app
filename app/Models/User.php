@@ -100,5 +100,4 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser, Has
     {
         return $this->getProfilePhotoUrlAttribute();
     }
-
 }

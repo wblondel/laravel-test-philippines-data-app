@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
-use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -12,7 +11,6 @@ use Filament\Resources\Table;
 use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class UserResource extends Resource
 {
@@ -95,7 +93,7 @@ class UserResource extends Resource
                         'success' => fn ($state): bool => $state !== null,
                         'danger' => fn ($state): bool => $state === null,
                     ])
-                    ->sortable()
+                    ->sortable(),
             ])
             ->defaultSort('created_at', 'desc')
             ->filters([
@@ -136,7 +134,7 @@ class UserResource extends Resource
     public static function getGlobalSearchResultDetails(Model $record): array
     {
         return [
-            'Name' => $record->name
+            'Name' => $record->name,
         ];
     }
 }

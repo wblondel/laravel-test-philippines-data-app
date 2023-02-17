@@ -10,8 +10,6 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class TeamResource extends Resource
 {
@@ -64,12 +62,12 @@ class TeamResource extends Resource
             ->filters([
                 Tables\Filters\SelectFilter::make('team_type')
                     ->options([
-                        true => "Personal Team",
-                        false => "Not Personal Team"
+                        true => 'Personal Team',
+                        false => 'Not Personal Team',
                     ])
                     ->attribute('personal_team'),
                 Tables\Filters\SelectFilter::make('owner')
-                    ->relationship('owner', 'email')
+                    ->relationship('owner', 'email'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
