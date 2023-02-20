@@ -2573,16 +2573,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.12.2",
+            "version": "3.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f"
+                "reference": "81e87e74dd5213795c7846d65089712d2dda90ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f6377c709d2275ed6feaf63e44be7a7162b0e77f",
-                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/81e87e74dd5213795c7846d65089712d2dda90ce",
+                "reference": "81e87e74dd5213795c7846d65089712d2dda90ce",
                 "shasum": ""
             },
             "require": {
@@ -2644,7 +2644,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.12.2"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.12.3"
             },
             "funding": [
                 {
@@ -2660,7 +2660,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-19T12:02:19+00:00"
+            "time": "2023-02-18T15:32:41+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -7253,16 +7253,16 @@
         },
         {
             "name": "dragon-code/support",
-            "version": "v6.10.0",
+            "version": "v6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheDragonCode/support.git",
-                "reference": "1379a6c56a8b964d58a284c80578d13ebd7d8c3a"
+                "reference": "09474e53245988b8b77d3a0506979526e8e7f291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheDragonCode/support/zipball/1379a6c56a8b964d58a284c80578d13ebd7d8c3a",
-                "reference": "1379a6c56a8b964d58a284c80578d13ebd7d8c3a",
+                "url": "https://api.github.com/repos/TheDragonCode/support/zipball/09474e53245988b8b77d3a0506979526e8e7f291",
+                "reference": "09474e53245988b8b77d3a0506979526e8e7f291",
                 "shasum": ""
             },
             "require": {
@@ -7281,8 +7281,8 @@
                 "andrey-helldar/support": "*"
             },
             "require-dev": {
-                "illuminate/contracts": "^9.7",
-                "phpunit/phpunit": "^9.5",
+                "illuminate/contracts": "^9.0 || ^10.0",
+                "phpunit/phpunit": "^9.6",
                 "symfony/var-dumper": "^6.0"
             },
             "suggest": {
@@ -7352,7 +7352,7 @@
                     "type": "yoomoney"
                 }
             ],
-            "time": "2023-02-02T15:58:52+00:00"
+            "time": "2023-02-19T11:30:03+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -7624,36 +7624,27 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "12.17.0",
+            "version": "12.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "fc84652189915bcc9b8f44104ad1344da5d70e9f"
+                "reference": "67455dfa3ca4b6f35c5cd8bccb0a252a2e4721b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/fc84652189915bcc9b8f44104ad1344da5d70e9f",
-                "reference": "fc84652189915bcc9b8f44104ad1344da5d70e9f",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/67455dfa3ca4b6f35c5cd8bccb0a252a2e4721b1",
+                "reference": "67455dfa3ca4b6f35c5cd8bccb0a252a2e4721b1",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*"
-            },
-            "conflict": {
-                "laravel-lang/publisher": "<14.0"
+                "ext-json": "*",
+                "laravel-lang/publisher": "^14.0",
+                "php": "^8.1"
             },
             "require-dev": {
-                "laravel-lang/publisher": "^14.0",
-                "laravel-lang/status-generator": "^1.11.1",
-                "php": "^8.1",
-                "phpunit/phpunit": "^9.5",
-                "symfony/var-dumper": "^5.0 || ^6.0"
-            },
-            "suggest": {
-                "arcanedev/laravel-lang": "Translations manager and checker for Laravel",
-                "laravel-lang/attributes": "Translations for field names of the forms",
-                "laravel-lang/http-statuses": "Translations for HTTP statuses",
-                "laravel-lang/publisher": "Easy installation and update of translation files for your project"
+                "laravel-lang/status-generator": "^1.13",
+                "phpunit/phpunit": "^9.6",
+                "symfony/var-dumper": "^6.0"
             },
             "type": "library",
             "extra": {
@@ -7695,7 +7686,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-02-14T22:05:52+00:00"
+            "time": "2023-02-20T08:54:34+00:00"
         },
         {
             "name": "laravel-lang/publisher",
