@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2a98ab2156faa2277b3045b338d70eb",
+    "content-hash": "b3f4dfa4512d03852a8ada6e23fbc043",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1629,23 +1629,23 @@
         },
         {
             "name": "joelbutcher/socialstream",
-            "version": "v3.9.0",
+            "version": "v4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joelbutcher/socialstream.git",
-                "reference": "461b2040d78258fce47bdc08249213d6bc827dcc"
+                "reference": "4ddd095d8e5b166b4d6b9f275f269c17a531b693"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joelbutcher/socialstream/zipball/461b2040d78258fce47bdc08249213d6bc827dcc",
-                "reference": "461b2040d78258fce47bdc08249213d6bc827dcc",
+                "url": "https://api.github.com/repos/joelbutcher/socialstream/zipball/4ddd095d8e5b166b4d6b9f275f269c17a531b693",
+                "reference": "4ddd095d8e5b166b4d6b9f275f269c17a531b693",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^3.0",
                 "illuminate/support": "^9.21|^10.0",
-                "laravel/jetstream": "^2.15|^2.16",
-                "laravel/socialite": "^5.5|^5.6",
+                "laravel/jetstream": "^2.16.2|^3.0",
+                "laravel/socialite": "^5.6",
                 "php": "^8.0.2"
             },
             "require-dev": {
@@ -1653,7 +1653,7 @@
                 "laravel/sanctum": "^2.7|^3.2",
                 "mockery/mockery": "^1.0",
                 "orchestra/testbench": "^7.0|^8.0",
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "extra": {
@@ -1711,7 +1711,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-01T12:03:55+00:00"
+            "time": "2023-02-20T11:37:51+00:00"
         },
         {
             "name": "laravel/fortify",
@@ -2053,16 +2053,16 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v2.16.2",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "1b95df05aac85caffdbba9aeb6d22a49fc598dff"
+                "reference": "1b8db2e3506b1d3e003ea5968f508b966aec056c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/1b95df05aac85caffdbba9aeb6d22a49fc598dff",
-                "reference": "1b95df05aac85caffdbba9aeb6d22a49fc598dff",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/1b8db2e3506b1d3e003ea5968f508b966aec056c",
+                "reference": "1b8db2e3506b1d3e003ea5968f508b966aec056c",
                 "shasum": ""
             },
             "require": {
@@ -2086,7 +2086,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-master": "3.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -2119,7 +2119,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2023-02-14T19:28:38+00:00"
+            "time": "2023-02-15T14:52:33+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -2573,16 +2573,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.12.2",
+            "version": "3.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f"
+                "reference": "81e87e74dd5213795c7846d65089712d2dda90ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f6377c709d2275ed6feaf63e44be7a7162b0e77f",
-                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/81e87e74dd5213795c7846d65089712d2dda90ce",
+                "reference": "81e87e74dd5213795c7846d65089712d2dda90ce",
                 "shasum": ""
             },
             "require": {
@@ -2644,7 +2644,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.12.2"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.12.3"
             },
             "funding": [
                 {
@@ -2660,7 +2660,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-19T12:02:19+00:00"
+            "time": "2023-02-18T15:32:41+00:00"
         },
         {
             "name": "league/mime-type-detection",
